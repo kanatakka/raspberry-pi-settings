@@ -14,8 +14,6 @@ function deleteTempFile() {
   rm ${FILE_NAME}
 }
 
-
-
 function main() {
   init
   wget ${DOWNLOAD_LINK}
