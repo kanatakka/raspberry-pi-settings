@@ -1,0 +1,6 @@
+
+# Add Configulation
+auto br0
+iface br0 inet manual
+bridge_ports eth0
+bridge_maxwait 10
