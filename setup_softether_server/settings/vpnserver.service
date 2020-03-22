@@ -1,0 +1,14 @@
+[Unit]
+Description=SoftEther VPN Server
+After=network.target network-online.target
+
+[Service]
+ExecStart=/usr/local/vpnserver/vpnserver start
+ExecStop=/usr/local/vpnserver/vpnserver stop
+WorkingDirectory=/usr/local/vpnserver/
+ExecStartPost=/bin/sleep 10 ; brctl addif br0 tap_vlan
+Type=forking
+RestartSec=3s
+
+[Install]
+WantedBy=multi-user.target
