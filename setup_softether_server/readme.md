@@ -11,3 +11,5 @@ sudo bash 01_install_app.sh
 ```Shell
 sudo bash 01_install_app.sh
 ```
+
+## 初回のみタップを手動で作成する。
