@@ -32,4 +32,4 @@ function main() {
   rm -rf ${SCRIPT_DIR}/vpnserver
 }
 
-deleteTempFile
+main
